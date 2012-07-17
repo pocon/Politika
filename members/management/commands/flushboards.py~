@@ -1,0 +1,21 @@
+"""
+A management command which flushes Redis and destroys the leaderboards in the process
+
+"""
+
+from django.core.management.base import NoArgsCommand
+from sing.models import Best_Performance
+from django.contrib.auth.models import User
+from userprofile.models import Group
+from django.conf import settings
+import redis
+
+r = redis.StrictRedis(host=getattr(settings, 'REDIS_HOST', 'localhost'), port=getattr(settings, 'REDIS_PORT', 6379))
+
+
+class Command(NoArgsCommand):
+    help = "Flush All of Redis"
+
+    def handle_noargs(self, **options):
+        r.flushall()
+        print 'OK. Done.'

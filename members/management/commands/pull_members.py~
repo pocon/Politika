@@ -1,0 +1,14 @@
+"""
+A management command which Grabs MPs from APH
+
+"""
+
+from django.core.management.base import NoArgsCommand
+from members.models import *
+from django.conf import settings
+
+class Command(NoArgsCommand):
+    help = "Grab All Members and Add them Into the DB"
+
+    def handle_noargs(self, **options):
+        print 'Working'
