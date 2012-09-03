@@ -1,8 +1,7 @@
 TODO
 ====
 
-Data Pulling and Input
-------------------------
+## Data Pulling and Input ##
 
 - Write Models for MPs, etc. - Patrick - Done
 - Write Scraper for: http://data.openaustralia.org/members/people.xml to pull MPs down - Patrick (Done)
