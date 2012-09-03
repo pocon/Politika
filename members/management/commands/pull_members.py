@@ -3,11 +3,6 @@ A management command which Grabs MPs from OA
 
 """
 
-
-
-
-
-
 from django.core.management.base import NoArgsCommand
 from members.models import *
 from BeautifulSoup import BeautifulStoneSoup as BS
@@ -20,4 +15,4 @@ class Command(NoArgsCommand):
         page = BS(urllib2.urlopen("http://data.openaustralia.org/members/people.xml"))
 
         for member in page.findAll("person"):
-            print member['latestname']
+            Member(name=member['latestname'], oa_id=member['id']).save()
