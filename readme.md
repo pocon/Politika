@@ -11,15 +11,15 @@ TODO
 - Write Scraper for: http://data.openaustralia.org/members/links-abc-qanda.xml to get q-and-a links - Patrick (Done)
 - Write Scraper for: http://data.openaustralia.org/members/ministers.xml to get positions (only latest) - Patrick (Done)
 
-- Write Scraper for: http://data.openaustralia.org/members/divisions.xml to get electorates - WangOS
-- Write Scraper for: http://data.openaustralia.org/members/representatives.xml to add electorate to MP - WangOS
-- Write Scraper for: http://data.openaustralia.org/members/links-abc-election.xml to get ABC links to electorate
+- Write Scraper for: http://data.openaustralia.org/members/divisions.xml to get electorates - WangOS (In Progress)
+- Write Scraper for: http://data.openaustralia.org/members/representatives.xml to add electorate to MP - WangOS (In Progress)
+- Write Scraper for: http://data.openaustralia.org/members/links-abc-election.xml to get ABC links to electorate - Alex (In Progress)
 
 
 - Write Models for Votes - Alex (Done)
-- Write Scraper for Votes: http://data.openaustralia.org/scrapedxml/representatives_debates/ - WangOS
+- Write Scraper for Votes: http://data.openaustralia.org/scrapedxml/representatives_debates/ - WangOS (In Progress)
 
-- Write Big and Small profile image scraper from: http://data.openaustralia.org/members/images/ , will need to add in as django image (*not* link) - Patrick (In Progress)
+- Write Big and Small profile image scraper from: http://data.openaustralia.org/members/images/ , will need to add in as django image (*not* link) - Patrick (Done)
 
 - Write Bill Model 
 
