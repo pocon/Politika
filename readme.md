@@ -19,9 +19,9 @@ TODO
 - Write Models for Votes - Alex (Done)
 - Write Scraper for Votes: http://data.openaustralia.org/scrapedxml/representatives_debates/ - WangOS
 
-- Write Big and Small profile image scraper from: http://data.openaustralia.org/members/images/ , will need to add in as django image (*not* link)
+- Write Big and Small profile image scraper from: http://data.openaustralia.org/members/images/ , will need to add in as django image (*not* link) - Patrick (In Progress)
 
-- Write Bill Model - Patrick (In Progress)
+- Write Bill Model 
 
 - Write News Scraper: https://news.google.com/news/feeds?ned=au&topic=n&output=rss: Will need to follow links and search for names of MPs in stories
 - Write Image Scraper: From News Stories
