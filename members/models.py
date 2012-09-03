@@ -14,6 +14,7 @@ class Party(models.Model):
 
 class Member(models.Model):
     oa_id = models.CharField(max_length=256) #ID in openaustralia: should be of form uk.org.publicwhip/member/x
+    oa_matchid = models.CharField(max_length=256) # Match ID in OA, should be of form above
     name = models.CharField(max_length=128)
 
     website = models.URLField(null=True, blank=True)
