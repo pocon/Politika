@@ -30,6 +30,17 @@ class Member(models.Model):
     
     simage = models.ImageField(null=True, blank=True) # Small Image
     bimage = models.ImageField(null=True, blank=True) # Big Image
+    
+    newsArticles = models.ManyToManyField(MPNewsArticle, null=True, blank=True)
 
     def __unicode__(self):
         return self.full_name
+
+class MPNewsArticle(models.Model):
+    title = models.CharField(max_length=128)
+    link = models.URLField()
+    description = models.CharField(max_length=4096)
+    pubDate = models.DateTimeField()
+    
+    def __unicode__(self):
+        return self.title
