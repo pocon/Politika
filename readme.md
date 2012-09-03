@@ -25,5 +25,9 @@ TODO
 
 - Write Bill Model - Patrick (In progress)
 
-- Write News Scraper: https://news.google.com/news/feeds?ned=au&topic=n&output=rss: Will need to follow links and search for names of MPs in stories
+- Write News Scraper: https://news.google.com/news/feeds?ned=au&topic=n&output=rss: Will need to follow links and search for names of MPs in stories - Alex (In Progress)
 - Write Image Scraper: From News Stories
+
+- Write Issues Model
+- Write Edit History System
+- Write Moderation/Reporting System
