@@ -2,11 +2,11 @@ from django.db import models
 from members.models import Member
 
 class MemberPair(models.Model):
-	LaborMP = models.ForeignKey(Member)
-	CoalitionMP = models.ForeignKey(Member)
+	Member1 = models.ForeignKey(Member) # We could make this be Labor, in general
+	Member2 = models.ForeignKey(Member) # and this Coalition; but I'm not sure it'd ever matter.
 	
 	def __unicode__(self):
-		return self.LaborMP.full_name + " & " + self.CoalitionMP.full_name
+		return self.Member1.full_name + " & " + self.Member2.full_name
 
 class Vote(models.Model):
 	oa_id = models.CharField(max_length=256)   # of form uk.org.publicwhip/debate/yyyy-mm-dd.x.y
