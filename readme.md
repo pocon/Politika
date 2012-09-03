@@ -13,7 +13,8 @@ TODO
 
 - Write Scraper for: http://data.openaustralia.org/members/divisions.xml to get electorates - WangOS (In Progress)
 - Write Scraper for: http://data.openaustralia.org/members/representatives.xml to add electorate to MP - WangOS (In Progress)
-- Write Scraper for: http://data.openaustralia.org/members/links-abc-election.xml to get ABC links to electorate - Alex (In Progress)
+- Write Scraper for: http://data.openaustralia.org/members/links-abc-election.xml to get ABC links to electorate - Alex (Done)
+
 
 
 - Write Models for Votes - Alex (Done)
@@ -21,7 +22,7 @@ TODO
 
 - Write Big and Small profile image scraper from: http://data.openaustralia.org/members/images/ , will need to add in as django image (*not* link) - Patrick (Done)
 
-- Write Bill Model 
+- Write Bill Model
 
 - Write News Scraper: https://news.google.com/news/feeds?ned=au&topic=n&output=rss: Will need to follow links and search for names of MPs in stories
 - Write Image Scraper: From News Stories
