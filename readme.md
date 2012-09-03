@@ -22,7 +22,7 @@ TODO
 
 - Write Big and Small profile image scraper from: http://data.openaustralia.org/members/images/ , will need to add in as django image (*not* link) - Patrick (Done)
 
-- Write Bill Model
+- Write Bill Model - Patrick (In progress)
 
 - Write News Scraper: https://news.google.com/news/feeds?ned=au&topic=n&output=rss: Will need to follow links and search for names of MPs in stories
 - Write Image Scraper: From News Stories
