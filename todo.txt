@@ -5,8 +5,8 @@ Data Pulling and Input
 ------------------------
 
 - Write Models for MPs, etc. - Patrick - Done
-- Write Scraper for: http://data.openaustralia.org/members/people.xml to pull MPs down - Patrick (in Progress)
-- Write Scraper for: http://data.openaustralia.org/members/websites.xml to get APH website and their own mp website
+- Write Scraper for: http://data.openaustralia.org/members/people.xml to pull MPs down - Patrick (Done)
+- Write Scraper for: http://data.openaustralia.org/members/websites.xml to get APH website and their own mp website - Patrick (In Progress)
 - Write Scraper for: http://data.openaustralia.org/members/websites.xml to get wikipedia pages
 - Write Scraper for: http://data.openaustralia.org/members/twitter.xml to get twitter accounts
 - Write Scraper for: http://data.openaustralia.org/members/links-abc-qanda.xml to get q-and-a links

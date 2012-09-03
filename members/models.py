@@ -20,12 +20,12 @@ class Member(models.Model):
     wikipedia = models.URLField(null=True, blank=True)
     twitter = models.CharField(max_length=128, null=True, blank=True) # Just contains their handle
 
-    position = models.CharField(max_length=256)
+    position = models.CharField(max_length=256, null=True, blank=True)
     party = models.ForeignKey(Party, null=True, blank=True)
-    electorate = models.ForeignKey(Electorate)
+    electorate = models.ForeignKey(Electorate, null=True, blank=True)
     
-    simage = models.ImageField() # Small Image
-    bimage = models.ImageField() # Big Image
+    simage = models.ImageField(null=True, blank=True) # Small Image
+    bimage = models.ImageField(null=True, blank=True) # Big Image
 
     def __unicode__(self):
         return self.full_name
