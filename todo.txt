@@ -12,10 +12,10 @@ Data Pulling and Input
 - Write Scraper for: http://data.openaustralia.org/members/links-abc-qanda.xml to get q-and-a links
 - Write Scraper for: http://data.openaustralia.org/members/ministers.xml to get positions (only latest)
 
-- Write Scraper for: http://data.openaustralia.org/members/divisions.xml to get electorates
-- Write Scraper for: http://data.openaustralia.org/members/representatives.xml to add electorate to MP
+- Write Scraper for: http://data.openaustralia.org/members/divisions.xml to get electorates - WangOS
+- Write Scraper for: http://data.openaustralia.org/members/representatives.xml to add electorate to MP - WangOS
 - Write Scraper for: http://data.openaustralia.org/members/links-abc-election.xml to get ABC links to electorate
 
 
 - Write Models for Votes
-- Write Scraper for Votes: http://data.openaustralia.org/scrapedxml/representatives_debates/ - Wangos
+- Write Scraper for Votes: http://data.openaustralia.org/scrapedxml/representatives_debates/ - WangOS
