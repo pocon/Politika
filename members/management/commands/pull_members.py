@@ -15,4 +15,9 @@ class Command(NoArgsCommand):
         page = BS(urllib2.urlopen("http://data.openaustralia.org/members/people.xml"))
 
         for member in page.findAll("person"):
-            Member(name=member['latestname'], oa_id=member['id']).save()
+            mid = False
+            for office in member.findAll("office"):
+                if office.get("current", "no") == "yes":
+                    if office['id'].startswith("uk.org.publicwhip/member/"):
+                        mid = office['id']
+            Member(name=member['latestname'], oa_id=member['id'], oa_matchid=mid).save()
