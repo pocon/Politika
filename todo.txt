@@ -9,8 +9,8 @@ Data Pulling and Input
 - Write Scraper for: http://data.openaustralia.org/members/websites.xml to get APH website and their own mp website - Patrick (Done)
 - Write Scraper for: http://data.openaustralia.org/members/wikipedia-commons.xml to get wikipedia pages - Patrick (Done)
 - Write Scraper for: http://data.openaustralia.org/members/twitter.xml to get twitter accounts - Patrick (Done)
-- Write Scraper for: http://data.openaustralia.org/members/links-abc-qanda.xml to get q-and-a links - Patrick (In Progress)
-- Write Scraper for: http://data.openaustralia.org/members/ministers.xml to get positions (only latest)
+- Write Scraper for: http://data.openaustralia.org/members/links-abc-qanda.xml to get q-and-a links - Patrick (Done)
+- Write Scraper for: http://data.openaustralia.org/members/ministers.xml to get positions (only latest) - Patrick (In Progress)
 
 - Write Scraper for: http://data.openaustralia.org/members/divisions.xml to get electorates - WangOS
 - Write Scraper for: http://data.openaustralia.org/members/representatives.xml to add electorate to MP - WangOS

@@ -1,5 +1,5 @@
 """
-A management command which Grabs MPs Wikipedia Pages from OA
+A management command which Grabs MPs Q And A profiles from OA
 
 """
 
@@ -9,14 +9,14 @@ from BeautifulSoup import BeautifulStoneSoup as BS
 import urllib2
 
 class Command(NoArgsCommand):
-    help = "Grab All Members Wikipedia Pages and Add them Into the DB"
+    help = "Grab All Members QandA Bio and Add them Into the DB"
 
     def handle_noargs(self, **options):        
-        page = BS(urllib2.urlopen("http://data.openaustralia.org/members/wikipedia-commons.xml"))
+        page = BS(urllib2.urlopen("http://data.openaustralia.org/members/links-abc-qanda.xml"))
 
         for member in page.findAll("personinfo"):
             m = Member.objects.get(oa_id=member['id'])
-            m.wikipedia = member['wikipedia_url']
+            m.qanda = member['mp_biography_qanda']
             m.save()
 
 

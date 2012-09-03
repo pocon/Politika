@@ -15,7 +15,7 @@ class Command(NoArgsCommand):
         page = BS(urllib2.urlopen("http://data.openaustralia.org/members/twitter.xml"))
 
         for member in page.findAll("personinfo"):
-            m = member.objects.get(oa_id=member['id'])
+            m = Member.objects.get(oa_id=member['id'])
             try:
                 m.twitter = member['mp_twitter_screen_name']
             except KeyError:

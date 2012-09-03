@@ -15,7 +15,7 @@ class Command(NoArgsCommand):
         page = BS(urllib2.urlopen("http://data.openaustralia.org/members/websites.xml"))
 
         for member in page.findAll("personinfo"):
-            m = member.objects.get(oa_id=member['id'])
+            m = Member.objects.get(oa_id=member['id'])
             m.website = member['mp_website']
             m.aph_page = member['mp_contactdetails']
             m.save()

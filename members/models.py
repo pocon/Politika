@@ -20,6 +20,7 @@ class Member(models.Model):
     aph_page = models.URLField(null=True, blank=True)
     wikipedia = models.URLField(null=True, blank=True)
     twitter = models.CharField(max_length=128, null=True, blank=True) # Just contains their handle
+    qanda = models.URLField(null=True, blank=True)
 
     position = models.CharField(max_length=256, null=True, blank=True)
     party = models.ForeignKey(Party, null=True, blank=True)
