@@ -23,11 +23,11 @@ TODO
 
 - Write Big and Small profile image scraper from: http://data.openaustralia.org/members/images/ , will need to add in as django image (*not* link) - Patrick (Done)
 
-- Write Bill Model - Patrick (In progress)
+- Write Bill Model - Patrick (Done)
 
 - Write News Scraper: https://news.google.com/news/feeds?ned=au&topic=n&output=rss: Will need to follow links and search for names of MPs in stories - Alex (In Progress)
 - Write Image Scraper: From News Stories
 
-- Write Issues Model
+- Write Issues Model - Patrick (In Progress)
 - Write Edit History System
 - Write Moderation/Reporting System
