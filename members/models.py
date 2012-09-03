@@ -17,6 +17,7 @@ class Member(models.Model):
     name = models.CharField(max_length=128)
 
     website = models.URLField(null=True, blank=True)
+    aph_page = models.URLField(null=True, blank=True)
     wikipedia = models.URLField(null=True, blank=True)
     twitter = models.CharField(max_length=128, null=True, blank=True) # Just contains their handle
 
