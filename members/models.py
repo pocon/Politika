@@ -2,6 +2,7 @@ from django.db import models
 
 class Electorate(models.Model):
     electorate = models.CharField(max_length=256)
+	ABC2007URL = models.URLField(null=True, blank=True)
 
     def __unicode__(self):
         return self.electorate
@@ -54,4 +55,4 @@ class Vote(models.Model):
 	pairs = models.ManyToManyField(MemberPair, blank=True, null=True)
 	
 	def __unicode__(self):
-		return self.name   
+		return self.name
