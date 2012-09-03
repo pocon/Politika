@@ -11,9 +11,10 @@ TODO
 - Write Scraper for: http://data.openaustralia.org/members/links-abc-qanda.xml to get q-and-a links - Patrick (Done)
 - Write Scraper for: http://data.openaustralia.org/members/ministers.xml to get positions (only latest) - Patrick (Done)
 
-- Write Scraper for: http://data.openaustralia.org/members/divisions.xml to get electorates - Patrick (In Progress)
-- Write Scraper for: http://data.openaustralia.org/members/representatives.xml to add electorate to MP - Patrick (In Progress)
+- Write Scraper for: http://data.openaustralia.org/members/divisions.xml to get electorates - Patrick (Done)
+- Write Scraper for: http://data.openaustralia.org/members/representatives.xml to add electorate to MP - Patrick (Done)
 - Write Scraper for: http://data.openaustralia.org/members/links-abc-election.xml to get ABC links to electorate - Alex (Done)
+- Write Scraper for: http://data.openaustralia.org/members/representatives.xml to get parties - Patrick (Done)                   
 
 
 
