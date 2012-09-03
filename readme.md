@@ -11,9 +11,10 @@ TODO
 - Write Scraper for: http://data.openaustralia.org/members/links-abc-qanda.xml to get q-and-a links - Patrick (Done)
 - Write Scraper for: http://data.openaustralia.org/members/ministers.xml to get positions (only latest) - Patrick (Done)
 
-- Write Scraper for: http://data.openaustralia.org/members/divisions.xml to get electorates - Patrick (In Progress)
-- Write Scraper for: http://data.openaustralia.org/members/representatives.xml to add electorate to MP - Patrick (In Progress)
+- Write Scraper for: http://data.openaustralia.org/members/divisions.xml to get electorates - Patrick (Done)
+- Write Scraper for: http://data.openaustralia.org/members/representatives.xml to add electorate to MP - Patrick (Done)
 - Write Scraper for: http://data.openaustralia.org/members/links-abc-election.xml to get ABC links to electorate - Alex (Done)
+- Write Scraper for: http://data.openaustralia.org/members/representatives.xml to get parties - Patrick (Done)                   
 
 
 
@@ -22,7 +23,11 @@ TODO
 
 - Write Big and Small profile image scraper from: http://data.openaustralia.org/members/images/ , will need to add in as django image (*not* link) - Patrick (Done)
 
-- Write Bill Model - Patrick (In progress)
+- Write Bill Model - Patrick (Done)
 
-- Write News Scraper: https://news.google.com/news/feeds?ned=au&topic=n&output=rss: Will need to follow links and search for names of MPs in stories
+- Write News Scraper: https://news.google.com/news/feeds?ned=au&topic=n&output=rss: Will need to follow links and search for names of MPs in stories - Alex (In Progress)
 - Write Image Scraper: From News Stories
+
+- Write Issues Model - Patrick (In Progress)
+- Write Edit History System
+- Write Moderation/Reporting System
