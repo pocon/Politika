@@ -15,6 +15,6 @@ class Command(NoArgsCommand):
         page = BS(urllib2.urlopen("http://data.openaustralia.org/members/links-abc-election.xml"))
 
         for consinfo in page.findAll("consinfo"):
-			elec = Electorate.objects.get(electorate__iexact=consinfo['canonical'])
-			elec.ABC2007URL = consinfo['abc_election_results_2007']
+            elec = Electorate.objects.get(electorate__iexact=consinfo['canonical'])
+            elec.abc = consinfo['abc_election_results_2007']
             elec.save()
