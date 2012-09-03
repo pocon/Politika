@@ -31,11 +31,17 @@ class Member(models.Model):
     simage = models.ImageField(null=True, blank=True) # Small Image
     bimage = models.ImageField(null=True, blank=True) # Big Image
     
-    newsArticles = models.ManyToManyField(MPNewsArticle, null=True, blank=True)
+    news = models.ForeignKey(MPNews, null=True, blank=True)
 
     def __unicode__(self):
         return self.full_name
 
+class MPNews(models.Model): # This is here so that there is also link1.
+    link1 = models.URLField()
+    articles = models.ManyToManyField(MPNewsArticle, null=True, blank=True)
+        def __unicode__(self):
+            return self.link1 # for lack of a better one
+    
 class MPNewsArticle(models.Model):
     title = models.CharField(max_length=128)
     link = models.URLField()
