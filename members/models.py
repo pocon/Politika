@@ -32,4 +32,4 @@ class Member(models.Model):
     bimage = models.ImageField(null=True, blank=True) # Big Image
 
     def __unicode__(self):
-        return self.full_name
+        return self.name
