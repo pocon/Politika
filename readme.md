@@ -28,6 +28,6 @@ TODO
 - Write News Scraper: https://news.google.com/news/feeds?ned=au&topic=n&output=rss: Will need to follow links and search for names of MPs in stories - Alex (In Progress)
 - Write Image Scraper: From News Stories
 
-- Write Issues Model - Patrick (In Progress)
-- Write Edit History System
+- Write Issues Model - Patrick (Done)
+- Write Edit History System - Patrick (In Progress)
 - Write Moderation/Reporting System
