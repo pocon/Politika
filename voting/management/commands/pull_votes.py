@@ -35,7 +35,6 @@ class Command(NoArgsCommand):
             day=date.day
             if day<10:day=str("0"+str(day))
             dateAsString=str(year)+"-"+str(month)+"-"+str(day)+".xml" # Ensures months and days are at least 2 digits long
-            print dateAsString
             if dateAsString in links:
                 rawHansard=urllib2.urlopen(urllib2.Request("http://data.openaustralia.org/scrapedxml/representatives_debates/"+dateAsString)).read()
                 procHansard=BeautifulSoup.BeautifulSoup(rawHansard)
@@ -70,7 +69,6 @@ class Command(NoArgsCommand):
         '''getDivisionsAfter(date) accepts a date object and pulls all divisions after that date (NOT including that date)
         '''
         def getDivisionsAfter(date):
-            final=[]
             templinks=[]
             reachedDate=False
             for edate in links:
