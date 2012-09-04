@@ -19,6 +19,10 @@ class Edit(models.Model):
             self.time = datetime.datetime.now()
         super(User, self).save(*args, **kwargs)
 
+class Link(models.Model):
+    text = models.CharField(max_length=256)
+    link = models.URLField()
+
 
 class Flag(models.Model):
     edit = models.ForeignKey(Edit)
@@ -84,6 +88,8 @@ class Bill(models.Model):
 
     introduced = models.DateField()
     introduced_by = models.ForeignKey(Member, blank=True, null=True)
+
+    links = models.ManyToManyField(blank=True, null=True)
 
     def flag(self, flagger, subject, reason):
         e = Edit.objects.filter(object_id=self.id).filter(object_type="Bill").filter(moderated=False).order_by('-time')
