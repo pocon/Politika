@@ -30,4 +30,11 @@ TODO
 
 - Write Issues Model - Patrick (Done)
 - Write Edit History System - Patrick (Done)
-- Write Moderation/Reporting System - Patrick (In Progress)
+- Write Moderation/Reporting System - Patrick (Done)
+
+## Views ##
+
+- MP View
+- Bill View - Patrick (In Progress)
+- Issue View
+- Division View
