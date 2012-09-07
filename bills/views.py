@@ -2,7 +2,7 @@ from bills.models import *
 from bills.forms import *
 from django.shortcuts import get_object_or_404, render_to_response, redirect
 from django.template import RequestContext
-from django.decorators import login_required
+from django.contrib.auth.decorators import login_required
 
 
 def BillPage(request, bill_id):
