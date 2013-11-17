@@ -28,17 +28,17 @@ class Member(models.Model):
     party = models.ForeignKey(Party, null=True, blank=True)
     electorate = models.ForeignKey(Electorate, null=True, blank=True)
     
-    simage = models.ImageField(null=True, blank=True) # Small Image
-    bimage = models.ImageField(null=True, blank=True) # Big Image
+    simage = models.ImageField(null=True, blank=True, upload_to="MP_Small") # Small Image
+    bimage = models.ImageField(null=True, blank=True, upload_to="MP_Big") # Big Image
     
-    news = models.ForeignKey(MPNews, null=True, blank=True)
+    news = models.ForeignKey('MPNews', null=True, blank=True)
 
     def __unicode__(self):
         return self.full_name
 
 class MPNews(models.Model): # This is here so that there is also link1.
     link1 = models.URLField()
-    articles = models.ManyToManyField(MPNewsArticle, null=True, blank=True)
+    articles = models.ManyToManyField('MPNewsArticle', null=True, blank=True)
     
     def __unicode__(self):
         return self.link1 # for lack of a better one
